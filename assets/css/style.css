@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,300&display=swap");
+
+body,
+.container,
+.input-wrapper,
+.todolist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Condensed", sans-serif;
+  background-color: #0f81df;
+}
+
+.container {
+  width: 35%;
+  margin: 6rem auto;
+  padding: 20px;
+  background-color: rgb(217, 232, 235);
+  box-shadow: 0 5px 10px rgb(121, 121, 121);
+  border-radius: 15px;
+  flex-direction: column;
+}
+
+/* --- input field --- */
+
+.input-wrapper {
+  padding: 12px;
+  margin: 15px;
+  width: 80%;
+  height: 3rem;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgb(121, 121, 121);
+  position: relative;
+}
+
+.input-icon1 {
+  width: 30px;
+  height: 30px;
+}
+
+.input-icon2 {
+  width: 25px;
+  height: 25px;
+}
+
+.input-icon1 {
+  margin: 5px;
+  padding: 8px;
+}
+
+.input-field {
+  width: 100%;
+}
+
+.input-field input[type="text"] {
+  padding-right: 50px;
+  width: 85%;
+  height: 35px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.input-icon2 {
+  display: none;
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.input-field:hover .input-icon2 {
+  display: block;
+}
+
+.input-wrapper:focus-within {
+  background-color: #c4f8e4;
+}
+
+/* --todo lists -- */
+
+.todolists {
+  width: 86%;
+  padding: 13px;
+  margin: 5px;
+  background-color: #0f81df;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgb(121, 121, 121);
+}
+
+.todolist {
+  width: 95%;
+  margin-bottom: 10px;
+  padding: 8px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgb(121, 121, 121);
+}
+
+.todolist input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  padding: 10px;
+  pointer-events: none;
+}
+.todolist input:checked ~ .list-content {
+  text-decoration: line-through;
+}
+
+.todolist .list-content {
+  margin: 5px;
+  width: 95%;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: justify;
+}
+
+.todolist button {
+  display: none;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgb(241, 24, 24);
+  color: antiquewhite;
+  border: none;
+  cursor: pointer;
+}
+
+.todolist:hover button {
+  display: block;
+}
+
+.completed-task {
+  width: 85%;
+  margin: 5px;
+  padding: 0 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.completed-task small,
+.pending-task small {
+  font-size: 16px;
+  padding: 5px;
+}
+
+.completed-task button {
+  background-color: #0f81df;
+  color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pending-task {
+  margin: 20px 15px;
+  padding: 5px;
+}
+
+.completed-task span,
+.pending-task .pending-no {
+  font-weight: 900;
+}
+
+.no-todolists img {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  opacity: 0.5;
+  background-color: transparent;
+}
+
+/* end of css */

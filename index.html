@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO App</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/aba6fa6c75.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- container  -->
+    <div class="container">
+      <!-- input-wrapper -->
+      <div class="input-wrapper">
+        <div class="input-icon">
+          <img
+            class="input-icon1"
+            src="https://cdn-icons-png.flaticon.com/512/8719/8719397.png"
+            alt="picture"
+          />
+        </div>
+
+        <div class="input-field">
+          <input
+            type="text"
+            id="input-text"
+            placeholder="Enter your TODO here"
+          />
+
+          <img
+            class="input-icon2"
+            src="https://cdn-icons-png.flaticon.com/512/3861/3861143.png"
+            alt="picture"
+          />
+        </div>
+      </div>
+
+      <!-- end of input-wrapper -->
+
+      <div class="completed-task">
+        <small>You have <span>0</span> completed tasks</small>
+        <button>Clear All</button>
+      </div>
+
+      <!-- todo lists -->
+      <ul class="todolists"></ul>
+      <!-- end of todo lists -->
+
+      <div class="no-todolists">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/46/46467.png"
+          alt="no-found"
+        />
+        <p>Create a Todo Lists</p>
+      </div>
+
+      <div class="pending-task">
+        <small>You have <span class="pending-no">0 </span> pending tasks</small>
+      </div>
+    </div>
+
+    <!-- end of container -->
+
+    <script src="assets//js/todo.js"></script>
+  </body>
+</html>
+
+<!-- end of HTML -->
