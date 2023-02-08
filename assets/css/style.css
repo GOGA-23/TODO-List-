@@ -27,6 +27,15 @@ body {
   flex-direction: column;
 }
 
+h4 {
+  font-weight: bolder;
+  letter-spacing: 2px;
+  font-size: 1.8rem;
+  margin: 0;
+  color: #0f81df;
+  text-decoration: underline;
+}
+
 /* --- input field --- */
 
 .input-wrapper {
@@ -182,6 +191,12 @@ body {
   height: 100px;
   opacity: 0.5;
   background-color: transparent;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 80%;
+  }
 }
 
 /* end of css */
