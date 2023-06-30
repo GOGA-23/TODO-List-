@@ -19,6 +19,10 @@ function allTask() {
     ? (noLists.hidden = true)
     : (noLists.hidden = false);
 
+  todoLists.children.length > 0
+    ? todoLists.classList.remove("hide")
+    : todoLists.classList.add("hide");
+
   // if task text length is zero. then pending & completed count will be zero.
   // if text length is greater than 0 means, then pending & completed  count added to ti
   completedTask.textContent = checkBtn === 0 ? "0" : checkBtn;
